@@ -28,9 +28,9 @@
                 :figwheel {:open-urls ["http://localhost:3449/showcase.html"]}
 
                 :compiler {:main example.showcase
-                           :asset-path "example/js/out"
+                           :asset-path "example/js/showcase"
                            :output-to "resources/public/example/js/showcase.js"
-                           :output-dir "resources/public/example/js/out"
+                           :output-dir "resources/public/example/js/showcase"
                            :source-map-timestamp true
                            :preloads [devtools.preload]}}
 
@@ -53,9 +53,21 @@
                 :figwheel {:open-urls ["http://localhost:3449/workflow.html"]}
 
                 :compiler {:main onyx-tutorial.workflow
-                           :asset-path "tutorial/js/out"
+                           :asset-path "tutorial/js/workflow"
                            :output-to "resources/public/tutorial/js/workflow.js"
-                           :output-dir "resources/public/tutorial/js/out"
+                           :output-dir "resources/public/tutorial/js/workflow"
+                           :source-map-timestamp true
+                           :preloads [devtools.preload]}}
+
+               {:id "windows-dev"
+                :source-paths ["src" "tutorial_src"]
+
+                :figwheel {:open-urls ["http://localhost:3449/windows.html"]}
+
+                :compiler {:main onyx-tutorial.windows
+                           :asset-path "tutorial/js/windows"
+                           :output-to "resources/public/tutorial/js/windows.js"
+                           :output-dir "resources/public/tutorial/js/windows"
                            :source-map-timestamp true
                            :preloads [devtools.preload]}}]}
 

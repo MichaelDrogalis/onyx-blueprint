@@ -168,7 +168,6 @@
    
    {:section/id ::validation
     :section/layout [[::validation-subhead]
-                     [::validation-intro]]}
-   ])
+                     [::validation-intro]]}])
 
 (api/render-tutorial! components sections (gdom/getElement "app"))

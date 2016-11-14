@@ -223,7 +223,6 @@
 (def sections
   [{:section/id :workflow-basics
     :section/layout [[::title]
-                     ;;[::leadin ::cheat-sheet-note]
                      '[::graph-desc
                        (::graph {:className "graph-height-med col-shrink-2"})
                        ::cheat-sheet-note-and-task-definition]
